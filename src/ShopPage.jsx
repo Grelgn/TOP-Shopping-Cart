@@ -8,7 +8,7 @@ const ShopPage = () => {
             <Header />
             <Navbar />
             <main>
-                <h2>The Shop Page</h2>
+                <Card />
                 <Card />
             </main>
         </>

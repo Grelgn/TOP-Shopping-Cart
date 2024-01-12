@@ -8,7 +8,10 @@ const HomePage = () => {
             <Header />
             <Navbar />
             <main>
-                <h2>The Home Page</h2>
+                <h2>Our products are awesome!</h2>
+                <p>This is the best place to buy your stuff! Best quality products now made available online!</p>
+                <img src="https://via.placeholder.com/500x250" alt="" />
+                <p>These are just a few examples of the awesome things you can buy!</p>
                 <Link to="/shop"><button>SHOP NOW!</button></Link>
             </main>
         </>

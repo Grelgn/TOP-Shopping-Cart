@@ -7,10 +7,12 @@ const Card = (props) => {
 
     function handleCartButton() {
         setAddedToCart(!addedToCart);
+        props.addToCart(props.data.title, amount);
     }
 
     function handleAmountChange(e) {
-        setAmount(e.target.value);
+        setAmount(parseInt(e.target.value));
+        props.changeAmount(props.data.title, parseInt(e.target.value));
     }
 
     return (
@@ -35,6 +37,8 @@ const Card = (props) => {
 
 Card.propTypes = {
     data: PropTypes.object,
+    addToCart: PropTypes.func,
+    changeAmount: PropTypes.func,
 }
 
 export default Card;

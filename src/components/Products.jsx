@@ -6,9 +6,9 @@ const Products = (props) => {
 	if (props.loading) return <p>Loading...</p>;
 
     return (
-        <>
-            <Card data={props.productList[0]}/>
-        </>
+        <main>
+            <Card data={props.productList[0]} addToCart={props.addToCart} changeAmount={props.changeAmount}/>
+        </main>
     );
 };
 
@@ -16,6 +16,8 @@ Products.propTypes = {
     error: PropTypes.object,
     loading: PropTypes.bool,
     productList: PropTypes.array,
+    addToCart: PropTypes.func,
+    changeAmount: PropTypes.func,
 }
 
 export default Products;

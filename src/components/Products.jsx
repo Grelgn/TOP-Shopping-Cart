@@ -6,13 +6,13 @@ const Products = (props) => {
 	if (props.loading) return <p>Loading...</p>;
 
 	return (
-		<main>
+		<div className="products">
 			<Card
 				data={props.productList[0]}
 				addToCart={props.addToCart}
 				changeAmount={props.changeAmount}
 			/>
-		</main>
+		</div>
 	);
 };
 

@@ -7,7 +7,7 @@ const HomePage = () => {
 		<>
 			<Header />
 			<Navbar />
-			<main>
+			<main className="home">
 				<h2>Our products are awesome!</h2>
 				<p>
 					This is the best place to buy your stuff! Best quality products now

@@ -49,14 +49,16 @@ const ShopPage = () => {
 		<>
 			<Header />
 			<Navbar />
-			<Products
-				error={error}
-				loading={loading}
-				productList={productList}
-				addToCart={addToCart}
-				changeAmount={changeAmount}
-			/>
-			<ShoppingCart cart={cart} />
+			<main className="shop">
+				<Products
+					error={error}
+					loading={loading}
+					productList={productList}
+					addToCart={addToCart}
+					changeAmount={changeAmount}
+				/>
+				<ShoppingCart cart={cart} />
+			</main>
 		</>
 	);
 };

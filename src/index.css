@@ -1,0 +1,69 @@
+body {
+	margin: 0;
+	height: 100svh;
+}
+
+#root {
+	display: grid;
+}
+
+header {
+	display: grid;
+	justify-content: center;
+	background-color: antiquewhite;
+}
+
+nav {
+	display: grid;
+	justify-content: center;
+	background-color: beige;
+}
+
+ul {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 50px;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: inherit;
+}
+
+.shop {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 4fr 1fr;
+}
+
+.home,
+.products {
+	background-color: azure;
+	display: grid;
+	justify-content: center;
+	justify-items: center;
+	padding: 20px;
+}
+
+.card {
+	width: 300px;
+	border: 1px solid black;
+	padding: 10px;
+	display: grid;
+}
+
+img {
+	height: 200px;
+	justify-self: center;
+}
+
+aside {
+	background-color: cornsilk;
+}

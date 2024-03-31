@@ -18,23 +18,35 @@ const Card = (props) => {
 	return (
 		<>
 			<div className="card">
-				<img src={props.data.image} alt="" />
-				<h2>{props.data.title}</h2>
-				<p>{props.data.category}</p>
-				<h3>{props.data.price}$</h3>
+				<p>
+					<b>Category: </b>
+					{props.data.category}
+				</p>
+				<img className="card-img" src={props.data.image} alt="" />
+				<h2 className="card-h">{props.data.title}</h2>
+
+				
 				<p>{props.data.description}</p>
-				<p>{props.data.rating.rate}</p>
-				<p>{props.data.rating.count}</p>
-				<input
-					type="number"
-					defaultValue={1}
-					min={1}
-					onChange={(e) => handleAmountChange(e)}
-				/>
-				<button onClick={handleCartButton}>
-					{addedToCart ? "Remove from Cart" : "Add to Cart"}
-				</button>
-				{addedToCart && <p>In Cart: {amount}</p>}
+
+				<div>
+					<h2>{props.data.price}$</h2>
+					<h3>
+						{props.data.rating.rate} &#11088; ({props.data.rating.count})
+					</h3>
+				</div>
+
+				<div>
+					<input
+						type="number"
+						defaultValue={1}
+						min={1}
+						onChange={(e) => handleAmountChange(e)}
+					/>
+					<button onClick={handleCartButton}>
+						{addedToCart ? "Remove from Cart" : "Add to Cart"}
+					</button>
+				</div>
+				{addedToCart && <p className="in-cart">In Cart: {amount}</p>}
 			</div>
 		</>
 	);

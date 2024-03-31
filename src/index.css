@@ -52,11 +52,43 @@ a:visited {
 	padding: 20px;
 }
 
+.products {
+	/* grid-auto-flow: column; */
+	grid-template-columns: repeat(auto-fill, 320px);
+}
+
 .card {
 	width: 300px;
 	border: 1px solid black;
 	padding: 10px;
 	display: grid;
+	font-size: 0.8rem;
+	justify-items: center;
+	align-content: space-between;
+	/* height: 600px; */
+	/* grid-template-columns: 1fr 1fr; */
+	position: relative;
+}
+
+input {
+	width: 30px;
+}
+
+/* .card-img, .card-h {
+	grid-column: 1 / span 2;
+} */
+
+.in-cart {
+	position: absolute;
+	bottom: 7px;
+	right: 10px;
+}
+
+.card h2,
+.card p,
+.card h3 {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 img {

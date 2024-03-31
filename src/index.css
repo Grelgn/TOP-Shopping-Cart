@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	height: 100svh;
+	background-color: #f1f5f9;
 }
 
 #root {
@@ -10,23 +11,24 @@ body {
 header {
 	display: grid;
 	justify-content: center;
-	background-color: antiquewhite;
+	background-color: #0f172a;
+	color: white;
 }
 
 nav {
 	display: grid;
 	justify-content: center;
-	background-color: beige;
+	background-color: #1e293b;
+	color: white;
+	font-weight: bold;
 }
 
 ul {
 	display: grid;
 	grid-auto-flow: column;
 	gap: 50px;
-}
-
-li {
-	list-style-type: none;
+	list-style: none;
+	padding-left: 0;
 }
 
 a {
@@ -45,7 +47,7 @@ a:visited {
 
 .home,
 .products {
-	background-color: azure;
+	background-color: #f1f5f9;
 	display: grid;
 	justify-content: center;
 	justify-items: center;
@@ -55,28 +57,24 @@ a:visited {
 .products {
 	/* grid-auto-flow: column; */
 	grid-template-columns: repeat(auto-fill, 320px);
+	gap: 20px;
 }
 
 .card {
+	background-color: white;
+	box-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.1);
 	width: 300px;
-	border: 1px solid black;
 	padding: 10px;
 	display: grid;
 	font-size: 0.8rem;
 	justify-items: center;
 	align-content: space-between;
-	/* height: 600px; */
-	/* grid-template-columns: 1fr 1fr; */
 	position: relative;
 }
 
 input {
 	width: 30px;
 }
-
-/* .card-img, .card-h {
-	grid-column: 1 / span 2;
-} */
 
 .in-cart {
 	position: absolute;
@@ -97,6 +95,6 @@ img {
 }
 
 aside {
-	background-color: cornsilk;
+	background-color: white;
 	padding-left: 15px;
 }

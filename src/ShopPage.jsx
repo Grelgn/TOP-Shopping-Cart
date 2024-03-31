@@ -18,7 +18,7 @@ const ShopPage = () => {
 			.finally(() => setLoading(false));
 	}, []);
 
-	function addToCart(name, amount) {
+	function addToCart(name, amount, price) {
 		for (let i = 0; i < cart.length; i++) {
 			if (cart[i].name == name) {
 				// Remove from cart
@@ -27,7 +27,7 @@ const ShopPage = () => {
 				return;
 			}
 		}
-		setCart((c) => [...c, { name: name, amount: amount }]);
+		setCart((c) => [...c, { name: name, amount: amount, price: price}]);
 	}
 
 	function changeAmount(name, amount) {

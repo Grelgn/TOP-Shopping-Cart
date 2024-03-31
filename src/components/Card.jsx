@@ -7,7 +7,7 @@ const Card = (props) => {
 
 	function handleCartButton() {
 		setAddedToCart(!addedToCart);
-		props.addToCart(props.data.title, amount);
+		props.addToCart(props.data.title, amount, props.data.price);
 	}
 
 	function handleAmountChange(e) {
@@ -29,7 +29,7 @@ const Card = (props) => {
 				<p>{props.data.description}</p>
 
 				<div>
-					<h2>{props.data.price}$</h2>
+					<h2>${props.data.price}</h2>
 					<h3>
 						{props.data.rating.rate} &#11088; ({props.data.rating.count})
 					</h3>

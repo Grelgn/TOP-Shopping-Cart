@@ -40,7 +40,7 @@ a:visited {
 .shop {
 	display: grid;
 	grid-auto-flow: column;
-	grid-template-columns: 4fr 1fr;
+	grid-template-columns: 1fr 250px;
 }
 
 .home,
@@ -98,4 +98,5 @@ img {
 
 aside {
 	background-color: cornsilk;
+	padding-left: 15px;
 }
